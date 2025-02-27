@@ -1,0 +1,138 @@
+
+/* Basic styling for the poster section */
+.poster {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 ;
+  }
+  
+  .posterImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* border-radius: 10px; */
+  }
+  
+  /* Styling for the overlay of poster image */
+  .posterImage__overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  
+  /* Show overlay text on hover */
+  .posterImage:hover .posterImage__overlay {
+    opacity: 1;
+  }
+  
+  .posterImage__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .posterImage__runtime {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .posterImage__rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .posterImage__rating svg {
+    margin-left: 5px;
+  }
+  
+  /* Description styling */
+  .posterImage__description {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+  }
+  
+  /* For mobile view: styling for carousel images */
+  @media (max-width: 768px) {
+    .posterImage__title {
+      font-size: 18px;
+    }
+  
+    .posterImage__runtime {
+      font-size: 12px;
+    }
+  
+    .posterImage__rating {
+      font-size: 14px;
+    }
+  
+    .posterImage__description {
+      font-size: 12px;
+    }
+  
+    .posterImage img {
+      height: 300px;
+    }
+  
+    .posterImage__overlay {
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
+      padding: 5px;
+    }
+  }
+  
+  /* For tablet and desktop view: */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .posterImage__title {
+      font-size: 22px;
+    }
+  
+    .posterImage__runtime {
+      font-size: 14px;
+    }
+  
+    .posterImage__rating {
+      font-size: 16px;
+    }
+  
+    .posterImage__description {
+      font-size: 14px;
+    }
+  
+    .posterImage img {
+      height: 400px;
+    }
+  
+    .posterImage__overlay {
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 10px;
+    }
+  }
+  
+  /* For desktop view: */
+  @media (min-width: 1024px) {
+    .posterImage img {
+      height: 500px;
+    }
+  
+    .posterImage__overlay {
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 15px;
+    }
+  }
+  
