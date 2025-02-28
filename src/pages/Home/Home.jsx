@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { IoStar } from "react-icons/io5";
 import "../Home.css"
 import { Link } from 'react-router-dom';
-
+import MovieList from '../../components/MovieList/MovieList';
 
 const Home = () => {
 
@@ -60,7 +60,9 @@ const Home = () => {
                         })
                     }
                 </Carousel>
+                <MovieList/>
             </div>
+           
         </>
     )
 }
