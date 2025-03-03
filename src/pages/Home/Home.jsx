@@ -6,7 +6,6 @@ import { IoStar } from "react-icons/io5";
 import "../Home/Home.css";
 import { Link } from "react-router-dom";
 import MovieList from "../../components/MovieList/MovieList";
-import { data } from "../../assets/data";
 
 const Home = () => {
   const [popularMovies, setPopularMovies] = useState([]);

@@ -6,12 +6,6 @@
     justify-content:space-between;
 }
 
-/* .navbar {
-    display: block;
-    align-items: center;
-
-} */
-
 a > span{
     margin: 0 30px;
     font-size: 1.3rem;
@@ -34,51 +28,4 @@ a > span:hover {
 
 
 
-
-/* Basic styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-}
-
-.navbar {
-    margin: 0 2.5rem;
-    padding: .5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbarLeft, .navbarRight {
-    display: flex;
-    align-items: center;
-}
-
-a > span {
-    margin: 0 30px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: white;
-}
-
-a > span:hover {
-    color: red;
-}
-
-.navbar_icon {
-    width: 100px;
-    cursor: pointer;
-}
-
-.user__avatar {
-    font-size: 2rem;
-}
-
-.Navbar link {
-    text-decoration: none;
-}
-
+    
