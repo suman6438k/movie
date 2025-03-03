@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-// import axios from 'axios';
+import axios from 'axios';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { IoStar } from "react-icons/io5";
-import "../Home.css";
+import "../Home/Home.css";
 import { Link } from "react-router-dom";
 import MovieList from "../../components/MovieList/MovieList";
 import { data } from "../../assets/data";
@@ -12,18 +12,18 @@ const Home = () => {
   const [popularMovies, setPopularMovies] = useState([]);
 
   useEffect(() => {
-    // const fetchData = async () => {
-    //     try {
-    //         const response = await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=f4c5b135fcf672995d0e63c3839d279a'
-    //         );
-    //         setPopularMovies(response.data.results);
-    //         console.log(response.data)
-    //     } catch (err) {
-    //         console.log(err.message);
-    //     }
-    // };
-    // fetchData();
-    setPopularMovies(data);
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=f4c5b135fcf672995d0e63c3839d279a'
+            );
+            setPopularMovies(response.data.results);
+            console.log(response.data)
+        } catch (err) {
+            console.log(err.message);
+        }
+    };
+    fetchData();
+    // setPopularMovies(data);
   }, []);
 
   return (
@@ -43,7 +43,7 @@ const Home = () => {
                   style={{ textDecoration: "none", color: "white" }}
                   to={`/movie/${movie.id}`}
                 >
-                  {/* <div className="posterImage">
+                  <div className="posterImage">
                     <img
                       src={`https://image.tmdb.org/t/p/original${
                         movie && movie.backdrop_path
@@ -64,13 +64,12 @@ const Home = () => {
                   </div>
                   <div className="posterImage__description">
                     {movie ? movie.overview : ""}
-                  </div> */}
+                  </div>
 
-<div className="posterImage">
+                  {/* <div className="posterImage">
                     <img
-                      src={`https://image.tmdb.org/t/p/original${
-                        movie && movie.backdrop_path
-                      }`}
+                      src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path
+                        }`}
                     />
                   </div>
                   <div className="posterImage__overlay">
@@ -86,8 +85,8 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="posterImage__description">
-                    {movie ? movie.description: ""}
-                  </div>
+                    {movie ? movie.description : ""}
+                  </div> */}
 
 
                 </Link>

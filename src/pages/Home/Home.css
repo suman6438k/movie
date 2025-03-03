@@ -14,7 +14,7 @@
   }
   
   /* Styling for the overlay of poster image */
-  .posterImage__overlay {
+  .posterImage__overlay  {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -25,7 +25,7 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     opacity: 0;
-  }
+  } 
   
   /* Show overlay text on hover */
   .posterImage:hover .posterImage__overlay {
@@ -48,7 +48,7 @@
     align-items: center;
   }
   
-  .posterImage__rating svg {
+  .posterImage__rating  {
     margin-left: 5px;
   }
   
